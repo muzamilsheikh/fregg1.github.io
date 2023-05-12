@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fregg</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .bg {
+        background-position: center;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.002), rgb(0, 0, 0)),
+          url(https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=907&q=80);
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .header-inner {
+        display: flex;
+        justify-content: space-around;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li {
+        list-style: none;
+        padding: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .logo h1 {
+        color: white;
+      }
+      .logo {
+        margin-top: 10px;
+      }
+      .icon {
+        font-size: 36px;
+        color: white;
+        margin-top: 10px;
+      }
+      .text {
+        margin: 10%;
+      }
+      span {
+        color: #e93f1a;
+      }
+      .text h1 {
+        color: white;
+        font-size: 45px;
+      }
+
+      .text p {
+        color: white;
+        font-weight: 200;
+      }
+      .text button {
+        margin-top: 10px;
+        background-color: #e93f1a;
+        border: 1px solid #e93f1a;
+        border-radius: 5px;
+        padding: 15px;
+      }
+      .text button a {
+        color: white;
+        padding: 25px;
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .about {
+        margin: 8%;
+      }
+      .about p {
+        margin-top: 10px;
+      }
+      .about button {
+        margin-top: 10px;
+        padding: 15px;
+        background-color: #e93f1a;
+        border: 1px solid #e93f1a;
+        border-radius: 5px;
+      }
+      .about button a {
+        padding: 25px;
+        color: white;
+        text-decoration: none;
+      }
+      .container-inner img {
+        padding-top: 30px;
+      }
+      .row {
+        background-color: #f6f6f6;
+      }
+      .heading {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+      }
+      .box1 {
+        display: flex;
+        justify-content: space-around;
+        margin: 10%;
+      }
+      .box2 {
+        display: flex;
+        justify-content: space-around;
+        margin: 10%;
+        padding-bottom: 20px;
+      }
+      .service1 button {
+        background-color: transparent;
+        border: 1px solid #e93f1a;
+        padding: 15px;
+        margin-top: 20px;
+      }
+      .service1 button a {
+        color: #e93f1a;
+        padding: 25px;
+      }
+      .service2 button {
+        background-color: transparent;
+        border: 1px solid #e93f1a;
+        padding: 15px;
+        margin-top: 20px;
+      }
+      .service2 button a {
+        color: #e93f1a;
+        padding: 25px;
+      }
+      .service3 button {
+        background-color: transparent;
+        border: 1px solid #e93f1a;
+        padding: 15px;
+        margin-top: 20px;
+      }
+      .service3 button a {
+        color: #e93f1a;
+        padding: 25px;
+      }
+      .service4 button {
+        background-color: transparent;
+        border: 1px solid #e93f1a;
+        padding: 15px;
+        margin-top: 20px;
+      }
+      .service4 button a {
+        color: #e93f1a;
+        padding: 25px;
+      }
+      .info {
+        text-align: center;
+        padding-bottom: 40px;
+      }
+      .info button {
+        background-color: #e93f1a;
+        border: 1px solid #e93f1a;
+        border-radius: 5px;
+        padding: 15px;
+        margin-top: 10px;
+      }
+      .info button a {
+        color: white;
+        padding: 25px;
+        text-decoration: none;
+      }
+      .bio1 {
+        display: flex;
+        justify-content: center;
+      }
+      input {
+        width: 20%;
+        margin: 20px;
+        height: 30px;
+      }
+      textarea {
+        width: 20%;
+        margin: 20px;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      }
+      .contect {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      footer {
+        background-color: black;
+        text-align: center;
+        color: white;
+        height: 10vh;
+      }
+      footer h2 {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="overlay">
+        <div class="bg">
+          <div class="header-inner">
+            <div class="logo">
+              <h1>FREGG</h1>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </nav>
+            <div class="icon">
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="text">
+            <h1>
+              WELCOME TO
+              <br />
+              <span
+                >CONTENT WRITING <br />
+                SERVICES</span
+              >
+            </h1>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the <br />
+              readable content of a pagewhen looking
+            </p>
+            <button>
+              <a href="">Contact Us</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hr />
+    <div class="container">
+      <div class="about">
+        <h1>About Us</h1>
+        <hr style="width: 11%; color: black" />
+        <p>
+          It is a long established fact that a reader will be <br />
+          distracted by the readable content of a page when <br />
+          looking at its layout. The point of using Lorem Ipsum is <br />
+          that it has a more-or-less normal distribution ofletters, <br />
+          as opposed to using 'Content here, content here', <br />
+          making it look like readable English. Many desktop <br />
+          publishing packages and web page editors now use <br />
+          Lorem Ipsum as their
+        </p>
+        <button>
+          <a href="">Get Started</a>
+        </button>
+      </div>
+      <div class="container-inner">
+        <img
+          src="https://o.remove.bg/downloads/d97e0b76-85a2-4a40-a810-d4ff86f8b790/photo-1580522154071-c6ca47a859ad-removebg-preview.png"
+          alt=""
+          width="100%"
+        />
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="heading">
+        <h1>
+          At Your Service
+          <hr style="width: 100%" />
+        </h1>
+      </div>
+      <div class="box1">
+        <div class="service1">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/muzamil-c9c77.appspot.com/o/heart.png?alt=media&token=de560b44-0c13-430d-99df-530f206927ed"
+            alt="Heart"
+            width="15%"
+          />
+          <h2>Written with Love</h2>
+          <p>
+            It is a long established fact that a reader will be <br />
+            distracted by the readable content of a page <br />
+            when looking at its layout. The point of using <br />
+            Lorem Ipsum is that it has a more-or-less <br />
+            normal distribution ofletters, as opposed to <br />
+            using 'Content here, content t,
+          </p>
+          <button><a href="">READ MORE</a></button>
+        </div>
+        <div class="service2">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/muzamil-c9c77.appspot.com/o/right.png?alt=media&token=c77d0903-82c2-4858-9e4b-63cfba7ebd47"
+            alt="right"
+            width="15%"
+          />
+          <h2>Fast Turnaround</h2>
+          <p>
+            It is a long established fact that a reader will be <br />
+            distracted by the readable content of a page <br />
+            when looking at its layout. The point of using <br />
+            Lorem Ipsum is that it has a more-or-less <br />
+            normal distribution ofletters, as opposed to <br />
+            using 'Content here, content t,
+          </p>
+          <button><a href="">READ MORE</a></button>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="service3">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/muzamil-c9c77.appspot.com/o/update.png?alt=media&token=22327f4a-88e7-4e5a-b5d1-b4fba6abcca3"
+            alt="Heart"
+            width="15%"
+          />
+          <h2>Up to Date</h2>
+          <p>
+            It is a long established fact that a reader will be <br />
+            distracted by the readable content of a page <br />
+            when looking at its layout. The point of using <br />
+            Lorem Ipsum is that it has a more-or-less <br />
+            normal distribution ofletters, as opposed to <br />
+            using 'Content here, content t,
+          </p>
+          <button><a href="">READ MORE</a></button>
+        </div>
+        <div class="service4">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/muzamil-c9c77.appspot.com/o/copy-writing.png?alt=media&token=f974d6fe-fa37-430a-92a4-c5c04cd19cf0"
+            alt="Heart"
+            width="15%"
+          />
+          <h2>Premium Content</h2>
+          <p>
+            It is a long established fact that a reader will be <br />
+            distracted by the readable content of a page <br />
+            when looking at its layout. The point of using <br />
+            Lorem Ipsum is that it has a more-or-less <br />
+            normal distribution ofletters, as opposed to <br />
+            using 'Content here, content t,
+          </p>
+          <button><a href="">READ MORE</a></button>
+        </div>
+      </div>
+      <div class="row-inner">
+        <div class="info">
+          <h2>Get Your Quote Today!</h2>
+          <p>
+            It is a long established fact that a reader <br />
+            will be distracted by the readable content of a page
+          </p>
+          <button><a href="">Get A Quote</a></button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h2>Copyright © 2045 All Rights Reserved. By HTML Design</h2>
+    </footer>
+  </body>
+</html>
